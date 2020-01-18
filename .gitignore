@@ -16,13 +16,13 @@
 /Assets/MixedRealityToolkit.Providers/
 /Assets/MixedRealityToolkit.SDK/
 /Assets/MixedRealityToolkit.Services/
+
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
 Assets/MixedRealityToolkit.meta
 Assets/MixedRealityToolkit.Providers.meta
 Assets/MixedRealityToolkit.SDK.meta
 Assets/MixedRealityToolkit.Services.meta
-
-# Asset meta data should only be ignored when the corresponding asset is also ignored
-!/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
