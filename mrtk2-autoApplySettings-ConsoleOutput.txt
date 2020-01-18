@@ -1,0 +1,57 @@
+NullReferenceException: Object reference not set to an instance of an object
+UnityEngine.Experimental.UIElements.StyleSheets.StyleSelectorHelper.FastLookup (System.Collections.Generic.IDictionary`2[TKey,TValue] table, System.Collections.Generic.List`1[T] matchedSelectors, UnityEngine.Experimental.UIElements.StyleMatchingContext context, System.String input, UnityEngine.Experimental.UIElements.StyleSheets.SelectorMatchRecord& record) (at C:/buildslave/unity/build/Modules/UIElements/StyleSheets/StyleSelectorHelper.cs:193)
+UnityEngine.Experimental.UIElements.StyleSheets.StyleSelectorHelper.FindMatches (UnityEngine.Experimental.UIElements.StyleMatchingContext context, System.Collections.Generic.List`1[T] matchedSelectors) (at C:/buildslave/unity/build/Modules/UIElements/StyleSheets/StyleSelectorHelper.cs:220)
+UnityEngine.Experimental.UIElements.VisualTreeStyleUpdaterTraversal.TraverseRecursive (UnityEngine.Experimental.UIElements.VisualElement element, System.Int32 depth) (at C:/buildslave/unity/build/Modules/UIElements/VisualTreeStyleUpdater.cs:218)
+UnityEngine.Experimental.UIElements.StyleSheets.HierarchyTraversal.Recurse (UnityEngine.Experimental.UIElements.VisualElement element, System.Int32 depth) (at C:/buildslave/unity/build/Modules/UIElements/HierarchyTraversal.cs:25)
+UnityEngine.Experimental.UIElements.VisualTreeStyleUpdaterTraversal.TraverseRecursive (UnityEngine.Experimental.UIElements.VisualElement element, System.Int32 depth) (at C:/buildslave/unity/build/Modules/UIElements/VisualTreeStyleUpdater.cs:227)
+UnityEngine.Experimental.UIElements.StyleSheets.HierarchyTraversal.Traverse (UnityEngine.Experimental.UIElements.VisualElement element) (at C:/buildslave/unity/build/Modules/UIElements/HierarchyTraversal.cs:12)
+UnityEngine.Experimental.UIElements.VisualTreeStyleUpdater.ApplyStyles () (at C:/buildslave/unity/build/Modules/UIElements/VisualTreeStyleUpdater.cs:110)
+UnityEngine.Experimental.UIElements.VisualTreeStyleUpdater.Update () (at C:/buildslave/unity/build/Modules/UIElements/VisualTreeStyleUpdater.cs:93)
+UnityEngine.Experimental.UIElements.VisualTreeUpdater.UpdateVisualTree () (at C:/buildslave/unity/build/Modules/UIElements/VisualTreeUpdater.cs:70)
+UnityEngine.Experimental.UIElements.Panel.Repaint (UnityEngine.Event e) (at C:/buildslave/unity/build/Modules/UIElements/Panel.cs:507)
+UnityEngine.Experimental.UIElements.UIElementsUtility.DoDispatch (UnityEngine.Experimental.UIElements.BaseVisualElementPanel panel) (at C:/buildslave/unity/build/Modules/UIElements/UIElementsUtility.cs:230)
+UnityEngine.Experimental.UIElements.UIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at C:/buildslave/unity/build/Modules/UIElements/UIElementsUtility.cs:68)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at C:/buildslave/unity/build/Modules/IMGUI/GUIUtility.cs:179)
+UnityEditor.EditorUtility:DisplayCancelableProgressBar(String, String, Single)
+Microsoft.Build.Unity.<>c__DisplayClass9_0:<BuildProjects>g__DisplayProgress|2(String, Single) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilder.cs:207)
+Microsoft.Build.Unity.MSBuildProjectBuilder:BuildProjects(IReadOnlyCollection`1, String, String) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilder.cs:171)
+Microsoft.Build.Unity.MSBuildProjectBuilder:BuildAllProjects(String, String) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilder.cs:121)
+Microsoft.Build.Unity.MSBuildProjectBuilder:TryBuildAllProjects(String, String) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilderEditor.cs:30)
+Microsoft.Build.Unity.ProjectGeneration.MSBuildTools:RefreshGeneratedOutput(Boolean) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectGenerator/Scripts/MSBuildTools.cs:177)
+Microsoft.Build.Unity.ProjectGeneration.MSBuildTools:.cctor() (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectGenerator/Scripts/MSBuildTools.cs:155)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes() (at C:/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:168)
+
+......................................................
+
+D:\Repos\PersonalGithub\mrtk2-hl1-intro\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter> dotnet msbuild DotNetAdapter.csproj -restore  -v:minimal -p:NuGetInteractive=true  -t:Build -p:Configuration=Release
+UnityEngine.Debug:Log(Object)
+Microsoft.Build.Unity.<ExecuteMSBuildAsync>d__17:MoveNext() (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilder.cs:403)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:Start(<ExecuteMSBuildAsync>d__17&)
+Microsoft.Build.Unity.MSBuildProjectBuilder:ExecuteMSBuildAsync(String, String, String, IProgress`1, CancellationToken)
+Microsoft.Build.Unity.<BuildProjectAsync>d__16:MoveNext() (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilder.cs:396)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:Start(<BuildProjectAsync>d__16&)
+Microsoft.Build.Unity.MSBuildProjectBuilder:BuildProjectAsync(String, BuildEngine, String, IProgress`1, CancellationToken)
+Microsoft.Build.Unity.<BuildProjectsAsync>d__10:MoveNext() (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilder.cs:289)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:Start(<BuildProjectsAsync>d__10&)
+Microsoft.Build.Unity.MSBuildProjectBuilder:BuildProjectsAsync(IReadOnlyCollection`1, String, String, IProgress`1, CancellationToken)
+Microsoft.Build.Unity.MSBuildProjectBuilder:BuildProjects(IReadOnlyCollection`1, String, String) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilder.cs:173)
+Microsoft.Build.Unity.MSBuildProjectBuilder:BuildProject(MSBuildProjectReference, String, String) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilder.cs:310)
+Microsoft.Build.Unity.MSBuildProjectImporter:OnImportAsset(AssetImportContext) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectImporter.cs:36)
+UnityEditor.Experimental.AssetImporters.ScriptedImporter:GenerateAssetData(AssetImportContext) (at C:/buildslave/unity/build/Modules/AssetPipelineEditor/Public/ScriptedImporter.cs:20)
+
+......................................................
+
+A default asset was created for 'Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/DotNetAdapter.csproj' because the asset importer crashed on it last time.
+You can select the asset and use the 'Assets -> Reimport' menu command to try importing it again, or you can replace the asset and it will auto import again.
+UnityEditor.AssetDatabase:Refresh()
+Microsoft.Build.Unity.MSBuildProjectBuilder:BuildProjects(IReadOnlyCollection`1, String, String) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilder.cs:246)
+Microsoft.Build.Unity.MSBuildProjectBuilder:BuildProject(MSBuildProjectReference, String, String) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectBuilder.cs:310)
+Microsoft.Build.Unity.MSBuildProjectImporter:OnImportAsset(AssetImportContext) (at Library/PackageCache/com.microsoft.msbuildforunity@0.8.3/Editor/ProjectBuilder/MSBuildProjectImporter.cs:36)
+UnityEditor.Experimental.AssetImporters.ScriptedImporter:GenerateAssetData(AssetImportContext)
+
+......................................................
+
+Added DLL directory D:\Repos\PersonalGithub\mrtk2-hl1-intro\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\x64 to the user search path.
+UnityEngine.Debug:Log(Object)
+Microsoft.Windows.MixedReality.DotNetWinRT.Init:.cctor() (at Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/netstandard2.0/Microsoft.Windows.MixedReality.DotNetWinRT/Editor/Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs:56)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes() (at C:/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:168)
