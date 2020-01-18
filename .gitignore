@@ -16,6 +16,10 @@
 /Assets/MixedRealityToolkit.Providers/
 /Assets/MixedRealityToolkit.SDK/
 /Assets/MixedRealityToolkit.Services/
+/Assets/MixedRealityToolkit.meta/
+/Assets/MixedRealityToolkit.Providers.meta/
+/Assets/MixedRealityToolkit.SDK.meta/
+/Assets/MixedRealityToolkit.Services.meta/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
