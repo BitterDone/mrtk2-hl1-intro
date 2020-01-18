@@ -12,10 +12,10 @@
 /HololensDemo/app/
 /app/
 /appAfterHL/
-/MixedRealityToolkit/
-/MixedRealityToolkit.Providers/
-/MixedRealityToolkit.SDK/
-/MixedRealityToolkit.Services/
+/Assets/MixedRealityToolkit/
+/Assets/MixedRealityToolkit.Providers/
+/Assets/MixedRealityToolkit.SDK/
+/Assets/MixedRealityToolkit.Services/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
